@@ -234,11 +234,16 @@ PRODUCT_VENDOR_PROPERTIES += \
 ro.qc.sdk.audio.ssr=false
 
 ##fluencetype can be "fluence" or "fluencepro" or "none"
+<<<<<<< HEAD
 PRODUCT_VENDOR_PROPERTIES += \
 ro.qc.sdk.audio.fluencetype=none\
 persist.audio.fluence.voicecall=true\
 persist.audio.fluence.voicerec=false\
 persist.audio.fluence.speaker=true
+=======
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.qc.sdk.audio.fluencetype=none
+>>>>>>> 32ecac6c3ac0571498b463222e73eae74bca2072
 
 #disable tunnel encoding
 PRODUCT_VENDOR_PROPERTIES += \
@@ -347,10 +352,6 @@ vendor.audio.adm.buffering.ms=2
 #enable headset calibration
 PRODUCT_VENDOR_PROPERTIES += \
 vendor.audio.volume.headset.gain.depcal=true
-
-#enable dualmic fluence for voice communication
-PRODUCT_VENDOR_PROPERTIES += \
-persist.vendor.audio.fluence.voicecomm=true
 endif
 
 USE_XML_AUDIO_POLICY_CONF := 1
